@@ -23,11 +23,15 @@
     "vite": "^4.4.9"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "deploy": "firebase deploy --only hosting",
+    "emul": "firebase emulators:start --only auth",
+    "dev": "NODE_ENV=development vite",
+    "dev-local": "NODE_ENV=local vite",
+    "build": "NODE_ENV=production vite build",
     "format": "prettier --write ."
   },
   "dependencies": {
+    "dotenv": "^16.3.1",
     "firebase": "^10.1.0",
     "jsrsasign": "^10.8.6"
   }

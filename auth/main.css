@@ -42,7 +42,7 @@ li a {
   margin-top: 20px;
   line-height: 25px;
 }
-#quickstart-sign-in-status, #sign-in-status, #quickstart-tenant-id {
+#quickstart-sign-in-status, #sign-in-status, #quickstart-tenant-id, #quickstart-app-name {
   font-weight: bold;
 }
 pre {

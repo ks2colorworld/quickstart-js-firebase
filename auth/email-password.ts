@@ -10,6 +10,7 @@ import {
   signOut,
 } from 'firebase/auth';
 import { firebaseConfig } from './config';
+import { env } from "./_env";
 
 initializeApp(firebaseConfig);
 
@@ -39,6 +40,10 @@ const signInStatus = document.getElementById(
 const accountDetails = document.getElementById(
   'quickstart-account-details',
 )! as HTMLDivElement;
+const appName = document.getElementById(
+  'quickstart-app-name',
+)! as HTMLSpanElement;
+appName.textContent = env.appName;//import.meta.env.APP_NAME; //
 
 /**
  * Handles the sign in button press.
