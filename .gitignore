@@ -7,3 +7,5 @@
 .firebaserc
 dist/
 **/ui-debug.log
+.env.*
+.firebase
